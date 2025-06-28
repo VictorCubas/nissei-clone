@@ -8,3 +8,11 @@ createRoot(document.getElementById('root')!).render(
     <App />
   </StrictMode>,
 )
+
+
+setTimeout(() => {
+  const globalLoader = document.getElementById('global-loader');
+  if (globalLoader) {
+    globalLoader.remove();
+  }
+}, 100)
