@@ -1,12 +1,18 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
+import { BrowserRouter } from 'react-router-dom';
 import './App.css';
+import NavBar from './components/NavBar';
+import PromocionesBar from './components/PromocionesBar';
 
 
 function App() {
 
   return (
     <>
-     <h1 className='text-amber-400 text-6xl'>Hello Nissei Clone</h1>
+      <BrowserRouter>
+        <PromocionesBar />
+        <NavBar />
+      </BrowserRouter>
     </>
   )
 }
