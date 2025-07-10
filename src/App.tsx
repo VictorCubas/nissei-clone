@@ -1,18 +1,14 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import NavBar from './components/NavBar';
-import PromocionesBar from './components/PromocionesBar';
+import AppRouter from './router/AppRouter';
 
 
 function App() {
 
   return (
     <>
-      <BrowserRouter>
-        <PromocionesBar />
-        <NavBar />
-      </BrowserRouter>
+     <AppRouter />
     </>
   )
 }

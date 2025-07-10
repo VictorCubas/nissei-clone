@@ -7,7 +7,7 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import { useState } from "react";
-import { Link, useNavigate, useNavigation } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const NavBar = () => {
   const [activeItem, setActiveItem] = useState<string | null>(null);
@@ -91,9 +91,6 @@ const NavBar = () => {
                 <div className="w-full">
                   <NavigationMenuLink className="font-semibold" asChild>
                     <Link to="/camaras">Cámaras</Link>
-                  </NavigationMenuLink>
-                  <NavigationMenuLink asChild>
-                    <Link to="/docs">Documentation</Link>
                   </NavigationMenuLink>
                   <NavigationMenuLink>Compactas</NavigationMenuLink>
                   <NavigationMenuLink>Especial Zoom</NavigationMenuLink>
